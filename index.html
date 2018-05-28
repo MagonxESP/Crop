@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Crop</title>
+        <link href="css/jquery.Jcrop.min.css" rel="stylesheet">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.Jcrop.min.js"></script>
+        <script src="js/crop.js"></script>
+        <style>
+            #cropbox {
+                width: 200px; 
+            }
+
+            #cropbox img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <input id="input-file" type="file">
+        </form>
+        <div id="cropbox">
+            <h1>Cropper</h1>
+            <img id="crop" src="#" alt="img-crop">
+            <button id="aplicar-btn">Aplicar</button>
+        </div>
+        <div id="result">
+            <h1>Result Canvas</h1>
+            <div id="canvas-container"></div>
+        </div>
+    </body>
+</html>
