@@ -52,10 +52,10 @@ function mapValues() {
     var $crop = $('#crop');
     console.log($crop.outerWidth());
     console.log($crop.outerHeight());
-    coords.x = map(coords.x, 0, $crop.outerWidth(), 0, this.img.width);
-    coords.y = map(coords.y, 0, $crop.outerHeight(), 0, this.img.height);
-    coords.w = map(coords.w, 0, $crop.outerWidth(), 0, this.img.width);
-    coords.h = map(coords.h, 0, $crop.outerHeight(), 0, this.img.height);
+    coords.x = map(coords.x, 0, $crop.width(), 0, this.img.width);
+    coords.y = map(coords.y, 0, $crop.height(), 0, this.img.height);
+    coords.w = map(coords.w, 0, $crop.width(), 0, this.img.width);
+    coords.h = map(coords.h, 0, $crop.height(), 0, this.img.height);
 }
 
 function applyCrop() {
